@@ -7,7 +7,7 @@ export function Header(){
                 <div>
                     <h1 className="font-bold text-3xl">BlessedFm.</h1>
                 </div>
-                <NavigationMenu className=" md:inline-block">
+                <NavigationMenu className="hidden md:inline-block">
                     <NavigationMenuList>
                         <NavigationMenuItem>
                             <Button type="button" variant='link' className="text-slate-300">
