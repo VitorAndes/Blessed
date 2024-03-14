@@ -10,9 +10,11 @@ import { HashLink as Link } from "react-router-hash-link";
 export function Header() {
   return (
     <div className="flex items-center justify-between p-8 bg-sky-500/60 shadow-lg backdrop-blur-sm rounded-lg">
-      <h1 className="font-bold text-3xl text-black transition-transform duration-400 animate-in fade-in ease-in translate-y-1">BlessedFm.</h1>
+      <h1 className="font-bold text-3xl text-black transition-transform duration-400 animate-in fade-in ease-in translate-y-1">
+        BlessedFm.
+      </h1>
       <BrowserRouter>
-        <NavigationMenu className="hidden md:inline-block">
+        <NavigationMenu className="hidden lg:inline-block">
           <NavigationMenuList>
             <NavigationMenuItem>
               <Button

@@ -52,8 +52,8 @@ export function Products() {
               );
             })}
           </CarouselContent>
-          <CarouselPrevious variant="default" />
-          <CarouselNext variant="default" />
+          <CarouselPrevious className="sm:hidden" variant="default" />
+          <CarouselNext className="sm:hidden" variant="default" />
         </Carousel>
       </div>
     </div>

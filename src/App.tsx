@@ -8,43 +8,43 @@ import { Reveal } from "./components/reveal";
 export function App() {
   return (
     <div className="scroll-smooth tracking-wider max-w-6xl m-auto bg-sky-700/30">
-      <header className="fixed top-0 m-auto text-center w-full md:w-[1152px] z-50">
+      <header className="fixed top-0 m-auto text-center w-full lg:w-[1152px]  z-50">
         <Header />
       </header>
-        <Reveal>
-          <section
-            className="flex lg:flex-row flex-col items-center space-y-6 py-24 mx-12 mt-24 h-screen"
-            id="Sobre"
-          >
-            <div className="flex-1 items-center">
-              <img
-                src="src\assets\Blessed_logo.jpeg"
-                alt="Logo blessed"
-                className="rounded-[5%] w-[300px] shadow-[10px_-2px_10px_0px] shadow-zinc-800 transition-all animate-in fade-in duration-1000"
-              />
-            </div>
-            <div className="flex-1 text-left space-y-3 ">
-              <h1 className="font-bold text-2xl text-black transition-all animate-in fade-in duration-1000">
-                Sobre Nós
-              </h1>
-              <p className="font-medium transition-transform translate-x-3 duration-1000 fade-in animate-in">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
-                harum tenetur nesciunt cupiditate porro sed assumenda iste odio,
-                soluta quas odit unde, voluptas rerum sapiente alias
-                reprehenderit commodi fugiat impedit?
-              </p>
-            </div>
-          </section>
-        </Reveal>
+      <Reveal>
+        <section
+          className="flex lg:flex-row flex-col items-center space-y-6 py-24 mx-12 mt-24 lg:h-screen"
+          id="Sobre"
+        >
+          <div className="flex-1 items-center">
+            <img
+              src="https://i.imgur.com/cPbtH0v.png?1"
+              alt="Logo da loja blessed"
+              className="rounded-[20%] w-[200px] md:w-[270px] m-auto flex hover:shadow-sky-600 shadow-[10px_-2px_10px_0px] shadow-zinc-800 transition-all animate-in fade-in duration-1000"
+            />
+          </div>
+          <div className="flex-1 text-left space-y-3 ">
+            <h1 className="font-bold text-2xl text-black transition-all animate-in fade-in duration-1000">
+              Sobre Nós
+            </h1>
+            <p className="font-medium transition-transform translate-x-3 duration-1000 fade-in animate-in">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+              harum tenetur nesciunt cupiditate porro sed assumenda iste odio,
+              soluta quas odit unde, voluptas rerum sapiente alias reprehenderit
+              commodi fugiat impedit?
+            </p>
+          </div>
+        </section>
+      </Reveal>
       <Separator id="Produtos" className="mb-12" />
       <Reveal>
-        <section className="space-y-6 py-24 mx-12 h-screen">
+        <section className="space-y-6 py-24 mx-12 lg:h-screen">
           <Products />
         </section>
       </Reveal>
       <Separator id="Contatos" />
       <Reveal>
-        <footer className="h-screen flex">
+        <footer className="lg:h-screen flex">
           <div className="flex flex-col m-auto items-center py-24 mx-12 space-y-8">
             <div className="text-left space-y-8">
               <h1 className="font-bold text-2xl text-black">

@@ -7,7 +7,7 @@ interface Props {
 
 export const Reveal = ({ children }: Props) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, {once: true});
+  const isInView = useInView(ref, { once: true });
 
   const mainControls = useAnimation();
 
@@ -22,13 +22,13 @@ export const Reveal = ({ children }: Props) => {
       <motion.div
         ref={ref}
         variants={{
-          hidden: { opacity: 0, y: 10},
+          hidden: { opacity: 0, y: 10 },
           visible: {
             opacity: 1,
             y: 0,
             transition: {
               type: "spring",
-              bounce: .5,
+              bounce: 0.5,
               duration: 1.5,
               delay: 0.25,
             },
